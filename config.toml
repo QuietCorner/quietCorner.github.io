@@ -1,0 +1,105 @@
+baseurl = "quietcorner.github.io"
+languageCode = "zh-cn"
+title = "Quiet Corner"
+# 通过输入您的 Disqus 短名称启用评论
+disqusShortname = "spf13"
+# 通过输入您的跟踪代码启用 Google Analytics
+googleAnalytics = ""
+# 定义每页的帖子数
+paginate = 10
+footnotereturnlinkcontents = "↩"
+theme = "hugo-icarus-theme"
+# 如果您在生产中使用此主题，请注释 themesDir 选项
+# themesDir = "../.."
+
+
+[permalinks]
+    post = "/:year/:month/:day/:slug"
+
+
+[params]
+    # 告诉我你是谁
+    author = "Liu An"
+    bio = "Blogger - Programmer - Gopher"
+    location = "Earth"
+    site_description = ""
+    copyright  = "Powered by [Hugo](//gohugo.io). Theme by [PPOffice](http://github.com/ppoffice)."
+    avatar = "css/images/avatar.jpg"
+    # 输入您的电子邮件地址以在个人资料中显示您的 Gravatar 图标。如果没有设置主题
+    # 将回退到头像。
+    gravatar = ""
+    logo = "css/images/logo.png"
+    disable_mathjax = false # 设置为 true 以禁用 MathJax
+
+    # 定义应显示哪些类型的页面。默认情况下具有最常规页面的类型
+    mainSections = ["post"]
+
+    # 使用 Go 的时间格式格式化日期
+    date_format = "2006-01-02"
+
+    # 添加自定义资源及其相对于静态文件夹的路径
+	custom_css = []
+	custom_js  = []
+
+# 通过定义标签和链接来创建自定义菜单条目
+# 他们。由于您还可以链接帖子，因此您可以选择
+# 将链接放在它们之前或之后。
+#
+# 例如：“主页”出现在菜单中所有链接的帖子之前
+# 和它们后面的“标签”/“类别”。
+[[params.menu]]
+    before = true
+    label  = "首页"
+    link   = "/"
+
+[[params.menu]]
+    before = true
+    label  = "标签"
+    link   = "tags/"
+
+[[params.menu]]
+    before = true
+    label  = "归档"
+    link   = "categories/"
+
+# 输入左侧关注按钮的链接
+[params.profile]
+    follow_button = "https://github.com/quietcorner"
+
+
+[social]
+# 将您的社交网络帐户添加到左侧的个人资料部分
+# 输入您的用户名。您帐户的链接将是
+# 自动创建。
+    github          = "quietcorner"
+    gitlab          = ""
+    bitbucket       = ""
+    jsfiddle        = ""
+    codepen         = ""
+    foursquare      = ""
+    dribbble        = ""
+    deviantart      = ""
+    behance         = ""
+    flickr          = ""
+    instagram       = ""
+    youtube         = ""
+    vimeo           = ""
+    vine            = ""
+    medium          = ""
+    wordpress       = ""
+    tumblr          = ""
+    xing            = ""
+    linkedin        = ""
+    slideshare      = ""
+    stackoverflow   = ""
+    reddit          = ""
+    pinterest       = ""
+    googleplus      = ""
+    twitter         = "spf13"
+
+# 启用和禁用右侧边栏的小部件
+[params.widgets]
+    recent_articles = true
+    categories = true
+    tags = true
+    tag_cloud = true
